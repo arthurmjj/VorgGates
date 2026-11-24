@@ -60,7 +60,7 @@ A história completa está em [Docs/HISTORIA.md](Docs/HISTORIA.md).
 
    ```powershell
    git lfs install
-   git clone <url-do-repositorio> VorgGates
+   git clone https://github.com/arthurmjj/VorgGates.git VorgGates
    ```
 
 3. No Unity Hub, clique em **Add** e selecione a pasta clonada.
