@@ -1,0 +1,20 @@
+{
+    "name": "VorgGates.Tests.Bot",
+    "rootNamespace": "VorgGates.Tests",
+    "references": [
+        "VorgGates.Core",
+        "VorgGates.Gameplay",
+        "VorgGates.App"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS || VORG_BUILD_SMOKE"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

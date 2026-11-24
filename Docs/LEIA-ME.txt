@@ -1,0 +1,37 @@
+VORG'GATES
+Aventura de exploração e combate em masmorras 3D.
+Três portões. Uma lâmina na pedra.
+
+INSTALAÇÃO E EXECUÇÃO
+1. Extraia todo o conteúdo do arquivo ZIP para uma pasta.
+2. Abra a pasta VorgGates.
+3. Dê dois cliques em VorgGates.exe.
+
+Não é necessário instalar o Unity nem outros programas.
+Não mova o VorgGates.exe para fora da pasta. Ele precisa dos outros arquivos.
+Se o Windows SmartScreen avisar sobre o arquivo, clique em "Mais informações"
+e depois em "Executar assim mesmo". O jogo não possui assinatura digital.
+
+REQUISITOS
+Windows 10 ou 11 de 64 bits, placa de vídeo com DirectX 11 ou 12, mouse e teclado.
+
+CONTROLES
+WASD              Mover
+Mouse             Mirar
+Clique esquerdo   Atacar
+Espaço            Esquivar
+E                 Interagir
+1, 2, 3 ou roda   Trocar arma
+Esc               Pausar
+
+OBJETIVO
+Atravesse a Cripta de Musgo, a Forja Afundada e o Santuário de Cinzas.
+Derrote os três chefões e retire a Lâmina de Vorg da pedra.
+
+Ao morrer, a masmorra atual reinicia com um novo layout, vida cheia e as armas
+que você tinha ao entrar nela. O progresso vale enquanto o jogo estiver aberto.
+
+CRÉDITOS
+Desenvolvido por Arthur Martins Jorge e Gabriel De Castro Domingo.
+Ciência da Computação - Universidade de Marília (UNIMAR).
+Créditos completos e licenças em CREDITOS.txt e na pasta Licencas.

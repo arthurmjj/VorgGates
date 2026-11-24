@@ -1,0 +1,45 @@
+VORG'GATES - CRÉDITOS E LICENÇAS
+
+DESENVOLVIMENTO
+Arthur Martins Jorge
+Gabriel De Castro Domingo
+Ciência da Computação - Universidade de Marília (UNIMAR)
+
+Feito com Unity 6.6 e Universal Render Pipeline.
+Trilhas, efeitos sonoros, interface, personagem principal, inimigos comuns e
+Guardião da Cripta foram criados para o projeto.
+
+ATRIBUIÇÃO OBRIGATÓRIA (CC BY 4.0)
+This work is based on "Undead Knight [Low-Poly]"
+(https://sketchfab.com/3d-models/undead-knight-low-poly-0453f93869af4776ac69d9ef896aa6a1)
+by SchrisArt (https://sketchfab.com/SchrisArt)
+licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/).
+Uso: Carrasco da Forja. Alterações: malha convertida de glTF para OBJ, flechas
+removidas, texturas reduzidas, armadura escurecida, capa recolorida, áreas
+incandescentes adicionadas, esqueleto e animações criados para o jogo.
+O autor original não endossa este projeto nem estas alterações.
+
+OUTROS ASSETS DE TERCEIROS
+Modular Dungeon Kit v1.0 - Kevin Barany / SigilsVault - CC0 1.0
+  https://sigilsvault.itch.io/modular-dungeon-kit-v10
+  Uso: arquitetura da Cripta de Musgo e pisos da Forja Afundada.
+Modular Cathedral Kit v1.0 - Kevin Barany / SigilsVault - CC0 1.0
+  https://sigilsvault.itch.io/modular-cathedral-kit
+  Uso: arquitetura do Santuário de Cinzas.
+Seahill Dungeon Complete v1.0.0 - See Hiong / Seahill Studio - CC0 1.0
+  https://seehiong.itch.io/seahill-dungeons
+  Uso: estruturas metálicas da Forja Afundada.
+Fullplate Armor Knight - Luana Coppio - CC0 1.0
+  https://magicalgothgirrl.itch.io/fullplate-armor-knight
+  Uso: Sentinela de Vorg.
+Foto "Suit Of Armor" - Petr Kratochvil - Domínio público
+  https://www.publicdomainpictures.net/en/view-image.php?image=377696&picture=suit-of-armor
+  Uso: base da textura do Fullplate Armor Knight.
+Graveyard Kit, Mini Dungeon, Nature Kit e Particle Pack - Kenney - CC0 1.0
+  https://kenney.nl/assets
+  Uso: decoração, baú, elixir, vegetação e partículas.
+Fonte Cinzel - The Cinzel Project Authors - SIL Open Font License 1.1
+  https://fonts.google.com/specimen/Cinzel
+  Texto da licença em Licencas/OFL-Cinzel.txt.
+
+Os arquivos de licença originais estão na pasta Licencas.

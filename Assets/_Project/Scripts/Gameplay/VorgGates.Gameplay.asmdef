@@ -1,0 +1,17 @@
+{
+    "name": "VorgGates.Gameplay",
+    "rootNamespace": "VorgGates.Gameplay",
+    "references": [
+        "VorgGates.Core",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

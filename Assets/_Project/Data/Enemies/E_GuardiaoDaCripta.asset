@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77138ba982c5bbf4e92da6d64b49c90d, type: 3}
+  m_Name: E_GuardiaoDaCripta
+  m_EditorClassIdentifier: VorgGates.Gameplay::VorgGates.Gameplay.EnemyDefinition
+  kind: 3
+  behavior: 3
+  displayName: "Guardi\xE3o da Cripta"
+  maxHealth: 420
+  damage: 20
+  moveSpeed: 2.1
+  attackRange: 5
+  preferredMinRange: 0
+  telegraph: 1
+  lungeDistance: 0
+  lungeDuration: 0.2
+  hitRadius: 1
+  recovery: 1
+  knockbackResistance: 1
+  projectile: {fileID: 6183146982173936657, guid: 897f8756f57dee04b8de6c17bf30b04f, type: 3}
+  projectileSpeed: 10
+  barHeight: 3.9
+  patterns:
+  - kind: 0
+    damage: 20
+    telegraph: 1
+    recovery: 1.25
+    duration: 0.3
+    range: 3.4
+    radius: 4
+    arcDegrees: 90
+    distance: 8
+    count: 5
+    projectileSpeed: 10
+  - kind: 2
+    damage: 22
+    telegraph: 1
+    recovery: 1.4
+    duration: 0.5
+    range: 9
+    radius: 3.5
+    arcDegrees: 90
+    distance: 10
+    count: 5
+    projectileSpeed: 10

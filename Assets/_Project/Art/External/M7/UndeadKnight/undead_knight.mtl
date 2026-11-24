@@ -1,0 +1,14 @@
+newmtl Claymore_Handle
+Kd 0.8 0.8 0.8
+newmtl Claymore_Blade
+Kd 0.8 0.8 0.8
+newmtl Cape
+Kd 0.8 0.8 0.8
+newmtl Rings
+Kd 0.8 0.8 0.8
+newmtl Armor
+Kd 0.8 0.8 0.8
+newmtl Cloth
+Kd 0.8 0.8 0.8
+newmtl Leather
+Kd 0.8 0.8 0.8

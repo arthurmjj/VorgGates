@@ -1,0 +1,38 @@
+{
+    "name": "VorgGatesControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0001",
+            "actions": [
+                { "name": "Move", "type": "Value", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0101", "expectedControlType": "Vector2", "processors": "", "interactions": "", "initialStateCheck": true },
+                { "name": "Aim", "type": "PassThrough", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0102", "expectedControlType": "Vector2", "processors": "", "interactions": "", "initialStateCheck": false },
+                { "name": "Attack", "type": "Button", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0103", "expectedControlType": "Button", "processors": "", "interactions": "", "initialStateCheck": false },
+                { "name": "Dodge", "type": "Button", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0104", "expectedControlType": "Button", "processors": "", "interactions": "", "initialStateCheck": false },
+                { "name": "Interact", "type": "Button", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0105", "expectedControlType": "Button", "processors": "", "interactions": "", "initialStateCheck": false },
+                { "name": "Weapon1", "type": "Button", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0106", "expectedControlType": "Button", "processors": "", "interactions": "", "initialStateCheck": false },
+                { "name": "Weapon2", "type": "Button", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0107", "expectedControlType": "Button", "processors": "", "interactions": "", "initialStateCheck": false },
+                { "name": "Weapon3", "type": "Button", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0108", "expectedControlType": "Button", "processors": "", "interactions": "", "initialStateCheck": false },
+                { "name": "WeaponCycle", "type": "PassThrough", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0109", "expectedControlType": "Axis", "processors": "", "interactions": "", "initialStateCheck": false },
+                { "name": "Pause", "type": "Button", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0110", "expectedControlType": "Button", "processors": "", "interactions": "", "initialStateCheck": false }
+            ],
+            "bindings": [
+                { "name": "WASD", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0201", "path": "2DVector", "interactions": "", "processors": "", "groups": "", "action": "Move", "isComposite": true, "isPartOfComposite": false },
+                { "name": "up", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0202", "path": "<Keyboard>/w", "interactions": "", "processors": "", "groups": "", "action": "Move", "isComposite": false, "isPartOfComposite": true },
+                { "name": "down", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0203", "path": "<Keyboard>/s", "interactions": "", "processors": "", "groups": "", "action": "Move", "isComposite": false, "isPartOfComposite": true },
+                { "name": "left", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0204", "path": "<Keyboard>/a", "interactions": "", "processors": "", "groups": "", "action": "Move", "isComposite": false, "isPartOfComposite": true },
+                { "name": "right", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0205", "path": "<Keyboard>/d", "interactions": "", "processors": "", "groups": "", "action": "Move", "isComposite": false, "isPartOfComposite": true },
+                { "name": "", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0206", "path": "<Mouse>/position", "interactions": "", "processors": "", "groups": "", "action": "Aim", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0207", "path": "<Mouse>/leftButton", "interactions": "", "processors": "", "groups": "", "action": "Attack", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0208", "path": "<Keyboard>/space", "interactions": "", "processors": "", "groups": "", "action": "Dodge", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0209", "path": "<Keyboard>/e", "interactions": "", "processors": "", "groups": "", "action": "Interact", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0210", "path": "<Keyboard>/1", "interactions": "", "processors": "", "groups": "", "action": "Weapon1", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0211", "path": "<Keyboard>/2", "interactions": "", "processors": "", "groups": "", "action": "Weapon2", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0212", "path": "<Keyboard>/3", "interactions": "", "processors": "", "groups": "", "action": "Weapon3", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0213", "path": "<Mouse>/scroll/y", "interactions": "", "processors": "", "groups": "", "action": "WeaponCycle", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "7c1f3f0a-5a42-4e6f-9a11-0d6e6b1a0214", "path": "<Keyboard>/escape", "interactions": "", "processors": "", "groups": "", "action": "Pause", "isComposite": false, "isPartOfComposite": false }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

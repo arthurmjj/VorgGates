@@ -1,0 +1,93 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Style src="Hud.uss" />
+    <ui:VisualElement name="hud-root" class="hud-root" picking-mode="Ignore">
+        <ui:VisualElement class="status-panel" picking-mode="Ignore">
+            <ui:VisualElement class="frame-gem frame-gem--left" picking-mode="Ignore" />
+            <ui:VisualElement class="frame-gem frame-gem--right" picking-mode="Ignore" />
+            <ui:Label name="player-name" text="VORG" class="status-name" picking-mode="Ignore" />
+            <ui:VisualElement class="bar health-bar" picking-mode="Ignore">
+                <ui:VisualElement name="health-fill" class="bar-fill health-fill" picking-mode="Ignore" />
+                <ui:Label name="health-text" text="100 / 100" class="bar-text" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="dodge-row" picking-mode="Ignore">
+                <ui:Label text="ESQUIVA" class="dodge-label" picking-mode="Ignore" />
+                <ui:VisualElement class="bar dodge-bar" picking-mode="Ignore">
+                    <ui:VisualElement name="dodge-fill" class="bar-fill dodge-fill" picking-mode="Ignore" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="objective-panel" picking-mode="Ignore">
+            <ui:Label name="objective-title" text="FASE 1" class="objective-title" picking-mode="Ignore" />
+            <ui:Label name="objective" text="Entre na Cripta de Musgo" class="objective-text" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:VisualElement class="weapon-bar" picking-mode="Ignore">
+            <ui:VisualElement name="slot-0" class="slot" picking-mode="Ignore">
+                <ui:Label text="1" class="slot-key" picking-mode="Ignore" />
+                <ui:Label name="slot-name-0" text="Espada" class="slot-name" picking-mode="Ignore" />
+                <ui:VisualElement class="slot-icon slot-icon--sword" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement name="slot-1" class="slot" picking-mode="Ignore">
+                <ui:Label text="2" class="slot-key" picking-mode="Ignore" />
+                <ui:Label name="slot-name-1" text="---" class="slot-name" picking-mode="Ignore" />
+                <ui:VisualElement class="slot-icon slot-icon--axe" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement name="slot-2" class="slot" picking-mode="Ignore">
+                <ui:Label text="3" class="slot-key" picking-mode="Ignore" />
+                <ui:Label name="slot-name-2" text="---" class="slot-name" picking-mode="Ignore" />
+                <ui:VisualElement class="slot-icon slot-icon--staff" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label text="WASD mover  ·  Mouse mirar  ·  Clique atacar  ·  Espaço esquivar  ·  E interagir  ·  1 2 3 trocar arma  ·  Esc pausar" class="controls-hint" picking-mode="Ignore" />
+        <ui:VisualElement name="boss-bar" class="boss-bar" picking-mode="Ignore">
+            <ui:VisualElement class="frame-gem frame-gem--left" picking-mode="Ignore" />
+            <ui:VisualElement class="frame-gem frame-gem--right" picking-mode="Ignore" />
+            <ui:Label name="boss-name" class="boss-name" picking-mode="Ignore" />
+            <ui:VisualElement class="bar boss-track" picking-mode="Ignore">
+                <ui:VisualElement name="boss-fill" class="bar-fill boss-fill" picking-mode="Ignore" />
+                <ui:Label name="boss-percent" text="100%" class="boss-percent" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label name="prompt" class="prompt" picking-mode="Ignore" />
+        <ui:VisualElement name="overlay" class="overlay" picking-mode="Ignore">
+            <ui:Label name="overlay-title" class="overlay-title" picking-mode="Ignore" />
+            <ui:Label name="overlay-subtitle" class="overlay-subtitle" picking-mode="Ignore" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="phase-card" class="phase-card" picking-mode="Ignore">
+        <ui:Label name="phase-number" class="phase-number" picking-mode="Ignore" />
+        <ui:VisualElement class="phase-rule" picking-mode="Ignore" />
+        <ui:Label name="phase-name" class="phase-name" picking-mode="Ignore" />
+        <ui:Label name="phase-tagline" class="phase-tagline" picking-mode="Ignore" />
+    </ui:VisualElement>
+    <ui:VisualElement name="main-menu" class="menu-screen menu-screen--title" picking-mode="Ignore">
+        <ui:Label text="VORG'GATES" class="menu-title" picking-mode="Ignore" />
+        <ui:VisualElement class="phase-rule" picking-mode="Ignore" />
+        <ui:Label text="Três portões. Uma lâmina na pedra." class="menu-subtitle" picking-mode="Ignore" />
+        <ui:VisualElement name="btn-continue" class="menu-btn" picking-mode="Ignore"><ui:Label text="Continuar" class="menu-btn-label" picking-mode="Ignore" /></ui:VisualElement>
+        <ui:VisualElement name="btn-play" class="menu-btn" picking-mode="Ignore"><ui:Label text="Jogar" class="menu-btn-label" picking-mode="Ignore" /></ui:VisualElement>
+        <ui:VisualElement name="btn-controls" class="menu-btn" picking-mode="Ignore"><ui:Label text="Controles" class="menu-btn-label" picking-mode="Ignore" /></ui:VisualElement>
+        <ui:VisualElement name="btn-quit" class="menu-btn" picking-mode="Ignore"><ui:Label text="Sair" class="menu-btn-label" picking-mode="Ignore" /></ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="pause-menu" class="menu-screen" picking-mode="Ignore">
+        <ui:Label text="PAUSA" class="menu-heading" picking-mode="Ignore" />
+        <ui:VisualElement class="phase-rule" picking-mode="Ignore" />
+        <ui:VisualElement name="btn-resume" class="menu-btn" picking-mode="Ignore"><ui:Label text="Continuar" class="menu-btn-label" picking-mode="Ignore" /></ui:VisualElement>
+        <ui:VisualElement name="btn-pause-controls" class="menu-btn" picking-mode="Ignore"><ui:Label text="Controles" class="menu-btn-label" picking-mode="Ignore" /></ui:VisualElement>
+        <ui:VisualElement name="btn-menu" class="menu-btn" picking-mode="Ignore"><ui:Label text="Voltar ao Menu" class="menu-btn-label" picking-mode="Ignore" /></ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="controls-menu" class="menu-screen" picking-mode="Ignore">
+        <ui:Label text="CONTROLES" class="menu-heading" picking-mode="Ignore" />
+        <ui:VisualElement class="phase-rule" picking-mode="Ignore" />
+        <ui:VisualElement class="controls-table" picking-mode="Ignore">
+            <ui:VisualElement class="control-row" picking-mode="Ignore"><ui:Label text="WASD" class="control-key" picking-mode="Ignore" /><ui:Label text="Mover" class="control-action" picking-mode="Ignore" /></ui:VisualElement>
+            <ui:VisualElement class="control-row" picking-mode="Ignore"><ui:Label text="Mouse" class="control-key" picking-mode="Ignore" /><ui:Label text="Mirar" class="control-action" picking-mode="Ignore" /></ui:VisualElement>
+            <ui:VisualElement class="control-row" picking-mode="Ignore"><ui:Label text="Clique esquerdo" class="control-key" picking-mode="Ignore" /><ui:Label text="Atacar" class="control-action" picking-mode="Ignore" /></ui:VisualElement>
+            <ui:VisualElement class="control-row" picking-mode="Ignore"><ui:Label text="Espaço" class="control-key" picking-mode="Ignore" /><ui:Label text="Esquivar" class="control-action" picking-mode="Ignore" /></ui:VisualElement>
+            <ui:VisualElement class="control-row" picking-mode="Ignore"><ui:Label text="E" class="control-key" picking-mode="Ignore" /><ui:Label text="Interagir" class="control-action" picking-mode="Ignore" /></ui:VisualElement>
+            <ui:VisualElement class="control-row" picking-mode="Ignore"><ui:Label text="1, 2, 3 ou roda" class="control-key" picking-mode="Ignore" /><ui:Label text="Trocar arma" class="control-action" picking-mode="Ignore" /></ui:VisualElement>
+            <ui:VisualElement class="control-row" picking-mode="Ignore"><ui:Label text="Esc" class="control-key" picking-mode="Ignore" /><ui:Label text="Pausar" class="control-action" picking-mode="Ignore" /></ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="btn-back" class="menu-btn" picking-mode="Ignore"><ui:Label text="Voltar" class="menu-btn-label" picking-mode="Ignore" /></ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Label name="menu-credits" text="Desenvolvido pelos alunos Arthur Martins Jorge e Gabriel De Castro Domingo" class="menu-credits" picking-mode="Ignore" />
+</ui:UXML>

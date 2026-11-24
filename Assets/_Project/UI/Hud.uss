@@ -1,0 +1,602 @@
+.hud-root {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.status-panel {
+    position: absolute;
+    left: 32px;
+    top: 28px;
+    width: 390px;
+    padding: 14px 18px;
+    background-color: rgba(31, 34, 51, 0.88);
+    border-width: 2px;
+    border-color: rgb(242, 193, 78);
+    border-radius: 6px;
+}
+
+.status-name {
+    color: rgb(242, 193, 78);
+    font-size: 20px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+
+.bar {
+    overflow: hidden;
+    background-color: rgb(20, 21, 33);
+    border-width: 1px;
+    border-color: rgb(90, 85, 104);
+    border-radius: 3px;
+}
+
+.health-bar {
+    height: 26px;
+}
+
+.bar-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.health-fill {
+    background-color: rgb(200, 85, 61);
+}
+
+.bar-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    color: rgb(232, 213, 168);
+    font-size: 16px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.dodge-row {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.dodge-label {
+    width: 86px;
+    margin: 0;
+    padding: 0;
+    color: rgb(232, 213, 168);
+    font-size: 13px;
+    -unity-font-style: bold;
+}
+
+.dodge-bar {
+    flex-grow: 1;
+    height: 10px;
+}
+
+.dodge-fill {
+    background-color: rgb(61, 218, 215);
+}
+
+.objective-panel {
+    position: absolute;
+    top: 28px;
+    right: 32px;
+    min-width: 330px;
+    padding: 12px 18px;
+    background-color: rgba(31, 34, 51, 0.88);
+    border-left-width: 4px;
+    border-color: rgb(242, 193, 78);
+    border-radius: 4px;
+}
+
+.objective-title {
+    color: rgb(242, 193, 78);
+    font-size: 13px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin: 0 0 3px 0;
+    padding: 0;
+}
+
+.objective-text {
+    color: rgb(232, 213, 168);
+    font-size: 21px;
+    -unity-font-style: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.boss-bar {
+    display: none;
+    position: absolute;
+    width: 540px;
+    padding: 7px 12px 11px 12px;
+    background-color: rgba(12, 12, 20, 0.94);
+    border-width: 3px;
+    border-color: rgb(242, 193, 78);
+    border-radius: 6px;
+}
+
+.boss-name {
+    margin: 0 0 5px 0;
+    padding: 0;
+    color: rgb(255, 226, 150);
+    font-size: 25px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 1px;
+}
+
+.boss-track {
+    height: 25px;
+    border-color: rgb(232, 213, 168);
+}
+
+.boss-fill {
+    background-color: rgb(226, 52, 40);
+    transition-property: width;
+    transition-duration: 0.12s;
+}
+
+.boss-fill--enraged {
+    background-color: rgb(255, 122, 32);
+}
+
+.boss-percent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgb(20, 12, 12);
+}
+
+.hud-root--hidden .status-panel,
+.hud-root--hidden .objective-panel,
+.hud-root--hidden .weapon-bar,
+.hud-root--hidden .controls-hint {
+    display: none;
+}
+
+.phase-card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(6, 6, 11);
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.45s;
+}
+
+.phase-card--visible {
+    opacity: 1;
+}
+
+.phase-number {
+    margin: 0;
+    color: rgb(242, 193, 78);
+    font-size: 30px;
+    -unity-font-style: bold;
+    letter-spacing: 8px;
+}
+
+.phase-rule {
+    flex-shrink: 0;
+    width: 360px;
+    height: 3px;
+    margin: 14px 0 16px 0;
+    background-color: rgb(242, 193, 78);
+}
+
+.phase-name {
+    margin: 0;
+    color: rgb(245, 232, 200);
+    font-size: 76px;
+    -unity-font-definition: url("Fonts/Cinzel-Bold-SDF.asset");
+    -unity-font-style: normal;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 5px rgba(8, 6, 10, 0.75);
+}
+
+.phase-tagline {
+    margin: 10px 0 0 0;
+    color: rgb(190, 180, 165);
+    font-size: 26px;
+    -unity-font-style: italic;
+}
+
+.menu-screen {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(8, 8, 14, 0.8);
+}
+
+.menu-screen--title {
+    background-color: rgba(8, 8, 14, 0.6);
+}
+
+.menu-title {
+    margin: 0;
+    color: rgb(242, 193, 78);
+    font-size: 118px;
+    -unity-font-definition: url("Fonts/Cinzel-Bold-SDF.asset");
+    -unity-font-style: normal;
+    letter-spacing: 3px;
+    text-shadow: 0 4px 7px rgba(8, 6, 10, 0.78);
+}
+
+.menu-credits {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    margin: 0;
+    padding: 0;
+    color: rgba(205, 205, 212, 0.58);
+    font-size: 15px;
+    -unity-text-align: middle-center;
+}
+
+.menu-subtitle {
+    margin: 0 0 30px 0;
+    color: rgb(232, 213, 168);
+    font-size: 28px;
+    -unity-font-style: italic;
+}
+
+.menu-heading {
+    margin: 0;
+    color: rgb(242, 193, 78);
+    font-size: 70px;
+    -unity-font-definition: url("Fonts/Cinzel-Bold-SDF.asset");
+    -unity-font-style: normal;
+    letter-spacing: 2px;
+    text-shadow: 0 3px 5px rgba(8, 6, 10, 0.75);
+}
+
+.menu-btn {
+    flex-shrink: 0;
+    width: 380px;
+    height: 62px;
+    margin: 6px 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(31, 34, 51, 0.95);
+    border-width: 2px;
+    border-color: rgb(90, 85, 104);
+    border-radius: 5px;
+}
+
+.menu-btn--selected {
+    background-color: rgb(200, 85, 61);
+    border-color: rgb(242, 193, 78);
+    scale: 1.04 1.04;
+}
+
+.menu-btn-label {
+    margin: 0;
+    padding: 0;
+    color: rgb(245, 232, 200);
+    font-size: 27px;
+    -unity-font-style: bold;
+}
+
+.controls-table {
+    flex-shrink: 0;
+    width: 620px;
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    background-color: rgba(31, 34, 51, 0.92);
+    border-width: 2px;
+    border-color: rgb(90, 85, 104);
+    border-radius: 6px;
+}
+
+.control-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+}
+
+.control-key {
+    margin: 0;
+    padding: 0;
+    color: rgb(242, 193, 78);
+    font-size: 25px;
+    -unity-font-style: bold;
+}
+
+.control-action {
+    margin: 0;
+    padding: 0;
+    color: rgb(245, 232, 200);
+    font-size: 25px;
+}
+
+.weapon-bar {
+    position: absolute;
+    left: 32px;
+    bottom: 48px;
+    flex-direction: row;
+}
+
+.slot {
+    width: 138px;
+    height: 76px;
+    margin-right: 8px;
+    padding: 7px 10px;
+    background-color: rgba(31, 34, 51, 0.7);
+    border-width: 2px;
+    border-color: rgb(90, 85, 104);
+    border-radius: 5px;
+    opacity: 0.62;
+}
+
+.slot--owned {
+    background-color: rgba(31, 34, 51, 0.92);
+    opacity: 1;
+}
+
+.slot--equipped {
+    background-color: rgb(58, 45, 42);
+    border-color: rgb(242, 193, 78);
+}
+
+.slot-key {
+    margin: 0;
+    padding: 0;
+    color: rgb(242, 193, 78);
+    font-size: 15px;
+    -unity-font-style: bold;
+}
+
+.slot-name {
+    margin: 3px 0 0 0;
+    padding: 0;
+    color: rgb(232, 213, 168);
+    font-size: 20px;
+    -unity-font-style: bold;
+}
+
+.controls-hint {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 18px;
+    margin: 0;
+    color: rgba(232, 213, 168, 0.72);
+    font-size: 15px;
+    -unity-text-align: middle-center;
+}
+
+.prompt {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 110px;
+    translate: -50% 0;
+    padding: 10px 24px;
+    color: rgb(31, 34, 51);
+    background-color: rgb(242, 193, 78);
+    border-radius: 4px;
+    font-size: 22px;
+    -unity-font-style: bold;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(18, 19, 30, 0.72);
+}
+
+.overlay-title {
+    color: rgb(242, 193, 78);
+    font-size: 64px;
+    -unity-font-definition: url("Fonts/Cinzel-Bold-SDF.asset");
+    -unity-font-style: normal;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 5px rgba(8, 6, 10, 0.75);
+    margin: 0 0 10px 0;
+}
+
+.overlay-subtitle {
+    color: rgb(232, 213, 168);
+    font-size: 26px;
+    margin: 0;
+}
+
+/* M6: medieval frame finish. Layout and names stay unchanged. */
+.status-panel,
+.boss-bar,
+.controls-table {
+    background-color: rgba(20, 17, 24, 0.92);
+    border-color: rgb(150, 112, 52);
+    border-top-color: rgb(242, 193, 78);
+    border-bottom-color: rgb(104, 76, 38);
+    border-radius: 2px;
+}
+
+.objective-panel {
+    background-color: rgba(20, 17, 24, 0.88);
+    border-right-width: 1px;
+    border-right-color: rgb(104, 76, 38);
+    border-radius: 2px;
+}
+
+.frame-gem {
+    position: absolute;
+    top: -7px;
+    width: 11px;
+    height: 11px;
+    background-color: rgb(242, 193, 78);
+    border-width: 1px;
+    border-color: rgb(60, 42, 20);
+    rotate: 45deg;
+}
+
+.frame-gem--left {
+    left: -7px;
+}
+
+.frame-gem--right {
+    right: -7px;
+}
+
+.bar {
+    background-color: rgb(13, 11, 16);
+    border-color: rgb(120, 92, 52);
+    border-radius: 1px;
+}
+
+.health-fill {
+    background-color: rgb(186, 52, 42);
+    border-top-width: 3px;
+    border-top-color: rgb(232, 112, 84);
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(118, 28, 28);
+}
+
+.dodge-fill {
+    background-color: rgb(52, 190, 188);
+    border-top-width: 2px;
+    border-top-color: rgb(150, 240, 234);
+}
+
+.boss-fill {
+    border-top-width: 3px;
+    border-top-color: rgb(255, 122, 92);
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(136, 24, 22);
+}
+
+.boss-fill--enraged {
+    border-top-color: rgb(255, 196, 96);
+    border-bottom-color: rgb(164, 66, 16);
+}
+
+.slot {
+    width: 166px;
+    background-color: rgba(20, 17, 24, 0.78);
+    border-color: rgb(96, 82, 62);
+    border-radius: 2px;
+}
+
+.slot--owned {
+    background-color: rgba(20, 17, 24, 0.94);
+}
+
+.slot--equipped {
+    background-color: rgb(58, 42, 34);
+    border-color: rgb(242, 193, 78);
+}
+
+.slot-icon {
+    position: absolute;
+    right: 4px;
+    top: 7px;
+    width: 58px;
+    height: 58px;
+    -unity-background-scale-mode: scale-to-fit;
+    opacity: 0.16;
+}
+
+.slot--owned .slot-icon {
+    opacity: 1;
+}
+
+.slot-icon--sword {
+    background-image: url("Icons/Icon_Sword.png");
+}
+
+.slot-icon--axe {
+    background-image: url("Icons/Icon_Axe.png");
+}
+
+.slot-icon--staff {
+    background-image: url("Icons/Icon_Staff.png");
+}
+
+.menu-screen--title {
+    background-color: rgba(8, 8, 14, 0.42);
+}
+
+.menu-subtitle {
+    text-shadow: 0 2px 4px rgba(4, 3, 8, 0.95);
+}
+
+.menu-credits {
+    color: rgba(226, 222, 212, 0.82);
+    text-shadow: 0 1px 3px rgba(4, 3, 8, 0.95);
+}
+
+.menu-btn {
+    background-color: rgba(20, 17, 24, 0.95);
+    border-color: rgb(120, 92, 52);
+    border-radius: 2px;
+}
+
+.menu-btn--selected {
+    background-color: rgb(164, 50, 40);
+    border-color: rgb(242, 193, 78);
+}
+
+/* Fixed at the top center, clear of the player panel and the objective. */
+.boss-bar {
+    left: 50%;
+    top: 26px;
+    translate: -50% 0;
+}
+
+/* Keeps the sword visible behind the victory message. */
+.overlay {
+    justify-content: flex-end;
+    padding-bottom: 130px;
+    background-color: rgba(10, 9, 16, 0.3);
+}
+
+.overlay-subtitle {
+    text-shadow: 0 2px 4px rgba(4, 3, 8, 0.95);
+}
+
+.prompt {
+    border-width: 2px;
+    border-color: rgb(120, 84, 28);
+    border-radius: 2px;
+}

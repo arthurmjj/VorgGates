@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450c74c0ebb22e044a115fd52782c3e7, type: 3}
+  m_Name: K_Forge
+  m_EditorClassIdentifier: VorgGates.Gameplay::VorgGates.Gameplay.DungeonKit
+  roomPrefab: {fileID: 8585734256643209001, guid: df660c1961805fb49a2f96e9992e8f26, type: 3}
+  corridorPrefab: {fileID: 6177628387075317680, guid: 584d9825bae47274bb74ee56a77b60a4, type: 3}
+  entranceInterior: {fileID: 1577676721133256173, guid: e95fa33fcf5424b409fd1b6c7c794a9f, type: 3}
+  exitInterior: {fileID: 3342017903820071478, guid: 148b4f2986405fc4f984b4577bcfc9e0, type: 3}
+  rewardInterior: {fileID: 2039053737515341172, guid: 68a36d9691539cf4a83f5ee9e0d9ceb4, type: 3}
+  bossInterior: {fileID: 368055816180971953, guid: 735fca0e952141c4c80d452b07a98d0f, type: 3}
+  combatInteriors:
+  - {fileID: 4167958780259303516, guid: 6d9bfa8f4d19c2048b654bd111650911, type: 3}
+  - {fileID: 3824498171816607178, guid: 6e2bbd1ca50bd4b48921f7cb956b41c8, type: 3}
+  - {fileID: 6978157704265052965, guid: 718182298d462ae4fa3eb718bf5d34b3, type: 3}
+  tallDoor: {fileID: 5929719168462801810, guid: 9b682962ab4a24445a3490b00f7287f5, type: 3}
+  lowDoor: {fileID: 3572154634584463189, guid: 03437389af3f2084f8adf09eb2da1e0d, type: 3}
+  portalPrefab: {fileID: 2405324059100386758, guid: 173bb5953bf1cc047a6f5800d33ac2ec, type: 3}
+  enemyPrefabs:
+  - {fileID: 541507868519934660, guid: 46df4adf690be904ab2a2b54ec32fb86, type: 3}
+  - {fileID: 4250977706705157293, guid: f58cb65a21f770b40ae3184ea2065d56, type: 3}
+  - {fileID: 374097236224115826, guid: 7a38cf27d5bbd7d4b8eb614acef0e3be, type: 3}
+  - {fileID: 4258559750792841664, guid: 3609cbd4baceb4d429929eab3c4af1fd, type: 3}

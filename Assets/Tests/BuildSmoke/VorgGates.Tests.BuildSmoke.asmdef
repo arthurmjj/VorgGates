@@ -1,0 +1,25 @@
+{
+    "name": "VorgGates.Tests.BuildSmoke",
+    "rootNamespace": "VorgGates.Tests",
+    "references": [
+        "VorgGates.Core",
+        "VorgGates.Gameplay",
+        "VorgGates.App",
+        "VorgGates.Presentation",
+        "Unity.InputSystem",
+        "VorgGates.Tests.Bot"
+    ],
+    "includePlatforms": [
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "VORG_BUILD_SMOKE"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

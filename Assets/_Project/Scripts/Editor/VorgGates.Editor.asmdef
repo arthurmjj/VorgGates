@@ -1,0 +1,25 @@
+{
+    "name": "VorgGates.Editor",
+    "rootNamespace": "VorgGates.EditorTools",
+    "references": [
+        "VorgGates.Core",
+        "VorgGates.Gameplay",
+        "VorgGates.Presentation",
+        "VorgGates.App",
+        "Unity.InputSystem",
+        "Unity.Cinemachine",
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.RenderPipelines.Universal.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ac013770ea01647982f805743c555c, type: 3}
+  m_Name: W_Machado
+  m_EditorClassIdentifier: VorgGates.Gameplay::VorgGates.Gameplay.WeaponDefinition
+  kind: 1
+  displayName: Machado
+  damage: 45
+  windup: 0.26
+  active: 0.1
+  recovery: 0.49
+  range: 2.6
+  arcDegrees: 170
+  knockback: 16
+  comboEvery: 0
+  comboDamage: 0
+  projectile: {fileID: 0}
+  projectileSpeed: 18

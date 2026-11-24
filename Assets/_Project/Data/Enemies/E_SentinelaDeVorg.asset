@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77138ba982c5bbf4e92da6d64b49c90d, type: 3}
+  m_Name: E_SentinelaDeVorg
+  m_EditorClassIdentifier: VorgGates.Gameplay::VorgGates.Gameplay.EnemyDefinition
+  kind: 3
+  behavior: 3
+  displayName: Sentinela de Vorg
+  maxHealth: 900
+  damage: 20
+  moveSpeed: 2.8
+  attackRange: 5
+  preferredMinRange: 0
+  telegraph: 1
+  lungeDistance: 0
+  lungeDuration: 0.2
+  hitRadius: 1
+  recovery: 1
+  knockbackResistance: 1
+  projectile: {fileID: 5412245856319468106, guid: c5395649a536b9f4da75dbde5a2f9867, type: 3}
+  projectileSpeed: 10
+  barHeight: 4.5
+  patterns:
+  - kind: 4
+    damage: 20
+    telegraph: 0.85
+    recovery: 0.85
+    duration: 0.25
+    range: 13
+    radius: 3
+    arcDegrees: 90
+    distance: 8
+    count: 14
+    projectileSpeed: 8.5
+  - kind: 5
+    damage: 32
+    telegraph: 0.95
+    recovery: 0.85
+    duration: 0.3
+    range: 15
+    radius: 2.3
+    arcDegrees: 90
+    distance: 8
+    count: 6
+    projectileSpeed: 10
+  - kind: 6
+    damage: 36
+    telegraph: 0.95
+    recovery: 1.15
+    duration: 0.3
+    range: 15
+    radius: 3.2
+    arcDegrees: 90
+    distance: 8
+    count: 5
+    projectileSpeed: 10

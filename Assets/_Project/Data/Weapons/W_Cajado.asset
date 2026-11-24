@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ac013770ea01647982f805743c555c, type: 3}
+  m_Name: W_Cajado
+  m_EditorClassIdentifier: VorgGates.Gameplay::VorgGates.Gameplay.WeaponDefinition
+  kind: 2
+  displayName: Cajado
+  damage: 14
+  windup: 0.12
+  active: 0.03
+  recovery: 0.3
+  range: 14
+  arcDegrees: 10
+  knockback: 2
+  comboEvery: 0
+  comboDamage: 0
+  projectile: {fileID: 6183146982173936657, guid: 897f8756f57dee04b8de6c17bf30b04f, type: 3}
+  projectileSpeed: 18

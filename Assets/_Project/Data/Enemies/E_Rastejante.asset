@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77138ba982c5bbf4e92da6d64b49c90d, type: 3}
+  m_Name: E_Rastejante
+  m_EditorClassIdentifier: VorgGates.Gameplay::VorgGates.Gameplay.EnemyDefinition
+  kind: 0
+  behavior: 0
+  displayName: Rastejante
+  maxHealth: 40
+  damage: 10
+  moveSpeed: 3.6
+  attackRange: 1.9
+  preferredMinRange: 0
+  telegraph: 0.4
+  lungeDistance: 2.2
+  lungeDuration: 0.14
+  hitRadius: 1.6
+  recovery: 0.75
+  knockbackResistance: 0
+  projectile: {fileID: 0}
+  projectileSpeed: 0

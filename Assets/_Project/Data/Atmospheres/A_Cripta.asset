@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc698751fe091049a5f2d1e81335458, type: 3}
+  m_Name: A_Cripta
+  m_EditorClassIdentifier: VorgGates.Presentation::VorgGates.Presentation.DungeonAtmosphere
+  ambientSky: {r: 0.49803922, g: 0.53333336, b: 0.6509804, a: 1}
+  ambientEquator: {r: 0.3372549, g: 0.3529412, b: 0.44705883, a: 1}
+  ambientGround: {r: 0.20392157, g: 0.20392157, b: 0.2901961, a: 1}
+  lightColor: {r: 0.7882353, g: 0.83137256, b: 0.9411765, a: 1}
+  lightIntensity: 1.05
+  lightEuler: {x: 58, y: 118, z: 0}
+  background: {r: 0.09019608, g: 0.09803922, b: 0.14901961, a: 1}
+  volume: {fileID: 11400000, guid: 58e696e2fe33be748bab0c34e38da381, type: 2}
+  particles: {fileID: 4500632944337972783, guid: a8995e84610909348a359b826d95d3a1, type: 3}

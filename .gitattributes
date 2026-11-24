@@ -1,0 +1,66 @@
+# Normalize text and let Git detect binary content
+* text=auto
+
+# Unity YAML: keep LF. text=auto protects any .asset saved as binary
+*.unity text=auto eol=lf
+*.prefab text=auto eol=lf
+*.mat text=auto eol=lf
+*.asset text=auto eol=lf
+*.meta text=auto eol=lf
+*.anim text=auto eol=lf
+*.controller text=auto eol=lf
+*.overrideController text=auto eol=lf
+*.physicMaterial text=auto eol=lf
+*.physicsMaterial2D text=auto eol=lf
+*.mask text=auto eol=lf
+*.playable text=auto eol=lf
+*.signal text=auto eol=lf
+*.shadervariants text=auto eol=lf
+*.lighting text=auto eol=lf
+*.preset text=auto eol=lf
+*.flare text=auto eol=lf
+
+# Git LFS: images
+*.[Pp][Nn][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Jj][Pp][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Jj][Pp][Ee][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Tt][Gg][Aa] filter=lfs diff=lfs merge=lfs -text
+*.[Tt][Ii][Ff] filter=lfs diff=lfs merge=lfs -text
+*.[Tt][Ii][Ff][Ff] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Ss][Dd] filter=lfs diff=lfs merge=lfs -text
+*.[Ee][Xx][Rr] filter=lfs diff=lfs merge=lfs -text
+*.[Hh][Dd][Rr] filter=lfs diff=lfs merge=lfs -text
+
+# Git LFS: 3D models
+*.[Ff][Bb][Xx] filter=lfs diff=lfs merge=lfs -text
+*.[Oo][Bb][Jj] filter=lfs diff=lfs merge=lfs -text
+*.[Bb][Ll][Ee][Nn][Dd] filter=lfs diff=lfs merge=lfs -text
+*.[Gg][Ll][Bb] filter=lfs diff=lfs merge=lfs -text
+*.[Dd][Aa][Ee] filter=lfs diff=lfs merge=lfs -text
+*.3[Dd][Ss] filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Aa] filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Bb] filter=lfs diff=lfs merge=lfs -text
+
+# Git LFS: audio and video
+*.[Ww][Aa][Vv] filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Pp]3 filter=lfs diff=lfs merge=lfs -text
+*.[Oo][Gg][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Ff][Ll][Aa][Cc] filter=lfs diff=lfs merge=lfs -text
+*.[Aa][Ii][Ff] filter=lfs diff=lfs merge=lfs -text
+*.[Aa][Ii][Ff][Ff] filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Pp]4 filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Oo][Vv] filter=lfs diff=lfs merge=lfs -text
+*.[Ww][Ee][Bb][Mm] filter=lfs diff=lfs merge=lfs -text
+
+# Git LFS: fonts, packages and native binaries
+*.[Tt][Tt][Ff] filter=lfs diff=lfs merge=lfs -text
+*.[Oo][Tt][Ff] filter=lfs diff=lfs merge=lfs -text
+*.unitypackage filter=lfs diff=lfs merge=lfs -text
+*.[Zz][Ii][Pp] filter=lfs diff=lfs merge=lfs -text
+*.7[Zz] filter=lfs diff=lfs merge=lfs -text
+*.[Dd][Ll][Ll] filter=lfs diff=lfs merge=lfs -text
+*.[Ss][Oo] filter=lfs diff=lfs merge=lfs -text
+
+# Git LFS: baked lighting
+LightingData.asset filter=lfs diff=lfs merge=lfs -text
+Lightmap-*.exr filter=lfs diff=lfs merge=lfs -text

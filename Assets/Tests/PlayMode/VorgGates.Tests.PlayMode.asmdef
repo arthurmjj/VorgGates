@@ -1,0 +1,27 @@
+{
+    "name": "VorgGates.Tests.PlayMode",
+    "rootNamespace": "VorgGates.Tests",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "VorgGates.Core",
+        "VorgGates.Gameplay",
+        "VorgGates.App",
+        "VorgGates.Presentation",
+        "VorgGates.Tests.Bot",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
