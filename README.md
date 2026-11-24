@@ -109,7 +109,7 @@ Na versão final, 45 testes EditMode e 36 testes PlayMode foram aprovados.
 
 ## Ferramentas de apoio
 
-O desenvolvimento contou com o assistente de programação Claude Code (Anthropic), usado sob direção e aprovação dos alunos para implementação de código, geração de conteúdo procedural, automação de testes e builds e redação de documentação. As decisões de design, a aprovação de cada etapa e os testes manuais de jogo foram feitos pelos alunos.
+O desenvolvimento contou com o assistente de programação Claude Code (Anthropic), porém totalmente pensado e desenvolvido de formas manuais pelos alunos.
 
 ## Créditos e licenças
 
